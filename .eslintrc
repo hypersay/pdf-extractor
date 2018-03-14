@@ -1,0 +1,19 @@
+{
+    "root": true,
+    "parser": "babel-eslint",
+    "extends": [
+      "airbnb-base",
+      "plugin:jest/recommended"
+    ],
+    "plugins": [
+      "jest"
+    ],
+    "rules": {
+      "arrow-parens": 0,
+      "comma-dangle": 1,
+      "no-console": 0,
+      "no-underscore-dangle": 0,
+      "no-unused-vars": ["error", { "varsIgnorePattern": "^_" }],
+      "no-plusplus": ["warn", { "allowForLoopAfterthoughts": true }]
+    }
+  }

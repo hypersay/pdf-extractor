@@ -1,0 +1,38 @@
+{
+  "name": "pdf-to-hypersay",
+  "version": "1.0.0",
+  "description": "Extract images and text from pdf",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run eslint && npm run test-only -- --coverage",
+    "test-only": "NODE_ENV=test jest",
+    "eslint": "eslint ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "decode-uri-component": "^0.2.0",
+    "pdf-image": "^1.0.5",
+    "pdf-text-extract": "^1.5.0",
+    "pdf2json": "^1.1.7",
+    "uuid": "^3.2.1"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverageFrom": [
+      "src/**/*.js"
+    ],
+    "moduleDirectories": [
+      "src",
+      "node_modules"
+    ]
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.2",
+    "eslint": "^4.18.2",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-jest": "^21.14.0",
+    "jest": "^22.4.2"
+  }
+}
